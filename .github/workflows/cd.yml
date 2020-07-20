@@ -52,7 +52,7 @@ jobs:
       if: matrix.os == 'macos-latest'
       id: shasum
       run: |
-        echo ::set-output name=sha::"$(shasum -a 256 ./release/gitui-mac.tar.gz | awk '{printf $1}')"
+        echo ::set-output name=sha::"$(shasum -a 256 ./release/mdbook-dtmo-mac.tar.gz | awk '{printf $1}')"
 
     - name: Release
       uses: softprops/action-gh-release@v1
